@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 /* Normalize */
@@ -2119,8 +2126,14 @@ select:focus-visible {
   background: #7968DB;
   max-width: 360px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 .teacher-info__img img {
@@ -2128,9 +2141,16 @@ select:focus-visible {
   height: auto;
 }
 .teacher-info__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .teacher-info__name {
@@ -2162,8 +2182,13 @@ select:focus-visible {
   margin-bottom: 50px;
 }
 .teacher-qualities__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .teacher-qualities__item {
@@ -2176,9 +2201,16 @@ select:focus-visible {
 .teacher-qualities__item-check {
   width: 40px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   background: #7968DB;
   border-radius: 50%;
@@ -2189,6 +2221,8 @@ select:focus-visible {
   line-height: 1.3;
 }
 .teacher-qualities__quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 40px;
   border-radius: 20px;
@@ -2449,8 +2483,12 @@ select:focus-visible {
 }
 
 .modal-content .form-rating__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -2467,6 +2505,8 @@ select:focus-visible {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -2485,7 +2525,12 @@ select:focus-visible {
 }
 .modal-content .form-file {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 40px;
 }
@@ -2517,12 +2562,18 @@ select:focus-visible {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .modal-content .btn-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .modal-content .btn-close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -7938,6 +7989,15 @@ select:focus-visible {
   .footer__menu {
     padding-top: 35px;
   }
+  .page-teacher .hero h1 {
+    font-size: 61px;
+  }
+  .teacher-qualities__title {
+    font-size: 41px;
+  }
+  .teacher-qualities__quote-text {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -8161,6 +8221,30 @@ select:focus-visible {
 
   .footer__menu {
     padding-top: 30px;
+  }
+  .page-teacher .hero h1 {
+    font-size: 51px;
+  }
+  .page-teacher .hero p {
+    font-size: 17px;
+  }
+  .teacher-info__name {
+    font-size: 32px;
+  }
+  .teacher-info__text {
+    font-size: 16px;
+  }
+  .teacher-qualities__title {
+    font-size: 32px;
+  }
+  .teacher-qualities__item {
+    max-width: 285px;
+  }
+  .teacher-qualities__item-text {
+    font-size: 16px;
+  }
+  .teacher-qualities__quote-text {
+    font-size: 24px;
   }
 }
 
@@ -8448,6 +8532,7 @@ select:focus-visible {
   .page-reviews .col-lg-6:first-of-type {
     margin-bottom: 40px;
   }
+
 }
 
 @media (max-width: 767.98px) {
@@ -8655,6 +8740,53 @@ select:focus-visible {
   .footer__menu {
     padding-top: 20px;
   }
+  .page-teacher .hero h1 {
+    font-size: 40px;
+  }
+  .page-teacher .hero p {
+    font-size: 16px;
+  }
+  .teacher-info__img {
+    max-width: 230px;
+    margin-bottom: 20px;
+  }
+  .teacher-qualities__title {
+    font-size: 27px;
+  }
+  .teacher-qualities__item {
+    margin-bottom: 40px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .teacher-qualities__item-check {
+    margin-right: 20px;
+  }
+  .teacher-qualities__quote-text {
+    font-size: 19px;
+  }
+  .teacher-qualities__quote {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-teacher .hero h1 {
+    font-size: 30px;
+  }
+  .teacher-qualities__quote-text {
+    font-size: 16px;
+  }
+  .teacher-qualities__quote {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .teacher-qualities__quote-icon {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -8697,6 +8829,12 @@ select:focus-visible {
   }
   .page-reviews .page-reviews__title h2 br {
     display: none;
+  }
+  .teacher-qualities__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -8741,7 +8879,6 @@ select:focus-visible {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
-
 
   .d-print-none {
     display: none !important;
